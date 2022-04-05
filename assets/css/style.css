@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Circular Black';
+    src: url('../fonts/circular-black.otf');
+}
+
+@font-face {
+    font-family: 'Circular Bold';
+    src: url('../fonts/circular-bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Circular Book';
+    src: url('../fonts/circular-book.otf');
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilities */
+
+.spotify-logo {
+    filter: brightness(0) invert(1);
+    width: 5.5625rem;
+    height: 1.765625rem;
+    color: #fff;
+}
+
+/* Header */
+
+.header {
+    width: 100vw;
+    height: 3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 0 15px;
+}
+
+.menu__button {
+    background-color: transparent;
+    border: none;
+}
+
+.menu__button span {
+    display: block;
+    background-color: #fff;
+    border-radius: 1px;
+    width: 22px;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+.header__navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2.375rem;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Circular Bold', Arial, sans-serif;
+    list-style: none;
+}
+
+.navbar__list li {
+    font-size: 1.875rem;
+    color: #fff;
+    margin-bottom: 1.5625rem;
+}
+
+.navbar__list li:nth-child(4) {
+    background-color: #fff;
+    width: 1.25rem;
+    height: 0.125rem;
+    margin-top: 1.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.navbar__list li:nth-child(5),
+.navbar__list li:nth-child(6) {
+    font-size: 1.5rem;
+    color: #d9dadc;
+}
+
+/* Main content */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2941ab;
+    background-image: url('https://www-growth.scdn.co/static/home/bursts-mobile.svg');
+    background-position: center top 40%;
+    background-repeat: no-repeat;
+    background-size: 215%;
+}
+
+.main__section {
+    width: 19.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__title {
+    font-family: 'Circular Black', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.5rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    color: #1ed760;
+    margin-bottom: 1rem;
+}
+
+.section__description {
+    font-family: 'Circular Book', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #1ed760;
+    margin-bottom: 2rem;
+}
+
+.section__button {
+    width: 11.75rem;
+    height: 3rem;
+    background-color: #1ed760;
+    color: #2941ab;
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.section__button div {
+    font-family: 'Circular Bold', Arial, sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3.125rem 0.9375rem 1.25rem 0.9375rem;
+}
+
+.footer a:active {
+    color: #1ed760;
+}
+
+.footer__top-links dl dt {
+    font-family: 'Circular Black', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #919496;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin-top: 3.125rem;
+    margin-bottom: 1.375rem;
+}
+
+.footer__top-links dl dd {
+    font-family: 'Circular Book', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.1875rem;
+    margin-bottom: 0.9375rem;
+}
+
+.footer__top-links dl dd a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__social-icons {
+    margin-top: 7.5rem;
+    margin-bottom: 0.9375rem;
+}
+
+.social-icons__list {
+    display: flex;
+}
+
+.social-icons__list li {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222326;
+    border-radius: 50%;
+    padding: 0.9375rem;
+    list-style: none;
+    margin-right: 0.9375rem;
+}
+
+.social-icons__list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons__list li a i {
+    font-size: 1.4rem;
+}
+
+.footer__location {
+    font-family: 'Circular Book', Arial, sans-serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-align: right;
+    color: #919496;
+}
+
+.footer__location i {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.footer__bottom-links {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.bottom-links__list {
+    list-style: none;
+    margin-right: 2.8125rem;
+}
+
+.bottom-links__list li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.bottom-links__list li a {
+    display: inline-block;
+    font-family: 'Circular Book', Arial, sans-serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #919496;
+    margin: 10px 0;
+}
+
+.footer__copyright {
+    font-family: 'Circular Book', Arial, sans-serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 0.625rem;
+    color: #919496;
+}
