@@ -17,16 +17,20 @@
     font-weight: 400;
 }
 
+/* Global styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body configs */
-
-body,
 html {
+    font-size: 62.5%;
+}
+
+html,
+body {
     overflow-x: hidden;
     position: relative;
 }
@@ -35,18 +39,12 @@ html {
     position: fixed;
 }
 
-/* Global styles */
-
-a:active {
-    color: #1ed760;
-}
-
 /* Utilities */
 
 .spotify-logo {
     filter: brightness(0) invert(1);
-    width: 5.5625rem;
-    height: 1.765625rem;
+    width: 8.9rem;
+    height: 2.825rem;
     color: #fff;
 }
 
@@ -54,12 +52,12 @@ a:active {
 
 .header {
     width: 100vw;
-    height: 3.375rem;
+    height: 5.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #000;
-    padding: 0 0.9375rem;
+    padding: 0 1.5rem;
 }
 
 .menu__button {
@@ -73,15 +71,15 @@ a:active {
 .button--bottom-bar {
     display: block;
     background-color: #fff;
-    border-radius: 0.0625rem;
-    width: 1.375rem;
-    height: 0.1875rem;
-    margin-bottom: 0.25rem;
+    border-radius: 1.6rem;
+    width: 2.2rem;
+    height: 0.3rem;
+    margin-bottom: 0.4rem;
     transition: 0.25s;
 }
 
 .top-bar--active {
-    transform: rotate(-45deg) translate(-0.3125rem, 0.3125rem);
+    transform: rotate(-45deg) translate(-0.5rem, 0.5rem);
 }
 
 .middle-bar--active {
@@ -89,7 +87,7 @@ a:active {
 }
 
 .bottom-bar--active {
-    transform: rotate(45deg) translate(-0.3125rem, -0.3125rem);
+    transform: rotate(45deg) translate(-0.5rem, -0.5rem);
 }
 
 .header__navbar {
@@ -99,7 +97,7 @@ a:active {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2.375rem;
+    padding: 3.8rem;
     background-color: #000;
     width: 100vw;
     height: 100vh;
@@ -121,26 +119,33 @@ a:active {
 }
 
 .navbar__list li {
-    font-size: 1.875rem;
-    margin-bottom: 1.5625rem;
+    font-size: 4.8rem;
+    margin-bottom: 2.5rem;
 }
 
-.navbar--about {
+.navbar__list li a:hover,
+.navbar__list li a:active {
+    color: #1ed760;
+}
+
+@keyframes animateLink {
+}
+
+.navbar--top-link {
     color: #fff;
     text-decoration: none;
-    animation: none;
 }
 
 .navbar--border {
     background-color: #fff;
-    width: 1.25rem;
-    height: 0.125rem;
-    margin-top: 1.125rem;
-    margin-bottom: 2.5rem;
+    width: 2rem;
+    height: 0.2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
 }
 
-.navbar--access {
-    font-size: 1.5rem;
+.navbar--bottom-link {
+    font-size: 2.4rem;
     color: #d9dadc;
     text-decoration: none;
 }
@@ -161,7 +166,7 @@ a:active {
 }
 
 .main__section {
-    width: 19.5rem;
+    width: 31.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,32 +175,32 @@ a:active {
 
 .section__title {
     font-family: 'Circular Black', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 4.8rem;
     font-weight: 900;
-    line-height: 3.5rem;
-    letter-spacing: -0.1rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.16rem;
     text-align: center;
     color: #1ed760;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .section__description {
     font-family: 'Circular Book', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 2.4rem;
     text-align: center;
     color: #1ed760;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
 }
 
 .section__button {
-    width: 11.75rem;
-    height: 3rem;
+    width: 18.8rem;
+    height: 4.8rem;
     background-color: #1ed760;
     color: #2941ab;
     border: none;
-    border-radius: 1.5rem;
+    border-radius: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,7 +209,7 @@ a:active {
 
 .section__button div {
     font-family: 'Circular Bold', Arial, sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
 }
 
@@ -213,25 +218,25 @@ a:active {
 .footer {
     background-color: #000;
     color: #fff;
-    padding: 3.125rem 0.9375rem 1.25rem 0.9375rem;
+    padding: 5rem 1.5rem 2rem 1.5rem;
 }
 
 .footer__top-links dl dt {
     font-family: 'Circular Black', Arial, sans-serif;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     color: #919496;
     text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    margin-top: 3.125rem;
-    margin-bottom: 1.375rem;
+    letter-spacing: 0.128rem;
+    margin-top: 5rem;
+    margin-bottom: 2.2rem;
 }
 
 .footer__top-links dl dd {
     font-family: 'Circular Book', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 0.1875rem;
-    margin-bottom: 0.9375rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer__top-links dl dd a {
@@ -239,9 +244,13 @@ a:active {
     text-decoration: none;
 }
 
+.footer__top-links dl dd a:hover {
+    color: #1ed760;
+}
+
 .footer__social-icons {
-    margin-top: 7.5rem;
-    margin-bottom: 0.9375rem;
+    margin-top: 12rem;
+    margin-bottom: 1.5rem;
 }
 
 .social-icons__list {
@@ -249,16 +258,16 @@ a:active {
 }
 
 .social-icons__list li {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 4.4rem;
+    height: 4.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #222326;
     border-radius: 50%;
-    padding: 0.9375rem;
+    padding: 1.5rem;
     list-style: none;
-    margin-right: 0.9375rem;
+    margin-right: 1.5rem;
 }
 
 .social-icons__list li a {
@@ -267,20 +276,35 @@ a:active {
 }
 
 .social-icons__list li a i {
-    font-size: 1.4rem;
+    font-size: 2.24rem;
+}
+
+.social-icons__list li a i:hover,
+.social-icons__list li a i:active {
+    color: #1ed760;
 }
 
 .footer__location {
     font-family: 'Circular Book', Arial, sans-serif;
-    font-size: 0.625rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: right;
     color: #919496;
 }
 
+.footer__location a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__location a:hover,
+.footer__location a:active {
+    color: #1ed760;
+}
+
 .footer__location i {
-    font-size: 0.75rem;
-    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
 }
 
 .footer__bottom-links {
@@ -290,30 +314,35 @@ a:active {
 
 .bottom-links__list {
     list-style: none;
-    margin-right: 2.8125rem;
+    margin-right: 4.5rem;
 }
 
 .bottom-links__list li {
     display: inline-block;
-    margin-right: 1.5rem;
+    margin-right: 2.4rem;
 }
 
 .bottom-links__list li a {
     display: inline-block;
     font-family: 'Circular Book', Arial, sans-serif;
-    font-size: 0.625rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     white-space: nowrap;
     color: #919496;
-    margin: 0.6525rem 0;
+    margin: 1rem 0;
+}
+
+.bottom-links__list li a:hover,
+.bottom-links__list li a:active {
+    color: #1ed760;
 }
 
 .footer__copyright {
     font-family: 'Circular Book', Arial, sans-serif;
-    font-size: 0.625rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: right;
-    margin-top: 0.625rem;
+    margin-top: 1rem;
     color: #919496;
 }
