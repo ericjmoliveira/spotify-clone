@@ -1,0 +1,185 @@
+@media (min-width: 480px) {
+    .header,
+    .main,
+    .footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .main {
+        background-image: url('https://www-growth.scdn.co/static/home/bursts-tablet.svg');
+        background-size: 153%;
+        background-position: right 40% center;
+    }
+
+    .section__title {
+        width: 75rem;
+        font-size: 10.4rem;
+        line-height: 10.4rem;
+        letter-spacing: -0.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .section__description {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header,
+    .main,
+    .footer {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .footer__top-links {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .footer__location {
+        font-size: 1.2rem;
+    }
+
+    .footer__bottom-links ul li a,
+    .footer__bottom-links span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header img,
+    .footer img {
+        width: 13.2rem;
+        height: 5rem;
+    }
+
+    .header {
+        align-items: center;
+        height: 8rem;
+    }
+
+    .header,
+    .main,
+    .footer {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .menu__button {
+        display: none;
+    }
+
+    .header__navbar {
+        position: static;
+        height: inherit;
+        margin-top: -1rem;
+        padding: 0;
+        height: auto;
+        width: fit-content;
+        align-items: center;
+        transform: translate(0);
+        transition: none;
+    }
+
+    .header__navbar img {
+        display: none;
+    }
+
+    .navbar__list {
+        flex-direction: row;
+    }
+
+    .navbar__list li {
+        margin-bottom: 0;
+        margin-right: 3rem;
+    }
+
+    .navbar__list li a {
+        font-size: 1.6rem;
+    }
+
+    .navbar--border {
+        transform: rotate(90deg) translateX(1.8rem);
+        width: 1.7rem;
+        height: 0.1rem;
+    }
+
+    .main {
+        background-image: url('https://www-growth.scdn.co/static/home/bursts-tablet.svg');
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 4fr 0.5fr 1fr;
+        padding-top: 8rem;
+    }
+
+    .footer__top-links dl dt {
+        margin-top: 0;
+    }
+
+    .footer__social-icons {
+        margin-top: 0;
+        justify-self: flex-end;
+    }
+
+    .footer__social-icons li {
+        width: 5.4rem;
+        height: 5.4rem;
+    }
+
+    .footer__social-icons li:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .footer__social-icons li a i {
+        font-size: 3rem;
+    }
+
+    .footer__location {
+        margin-top: 4.5rem;
+    }
+
+    .footer__bottom-links,
+    .footer__location {
+        grid-column: 1/-1;
+    }
+
+    .footer__bottom-links span {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        background-image: url('https://www-growth.scdn.co/static/home/bursts.svg');
+        background-size: 175%;
+        background-position: 46% 4%;
+        min-height: 84.6rem;
+    }
+
+    .section__title {
+        width: 135rem;
+        line-height: 15.6rem;
+        font-size: 15.6rem;
+        margin-left: -20rem;
+        margin-bottom: 5rem;
+    }
+
+    .section__title span {
+        margin-left: 50rem;
+    }
+
+    .section__description {
+        width: 100rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    .footer a {
+        font-weight: 500;
+    }
+}
