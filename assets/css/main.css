@@ -96,19 +96,23 @@ body {
     justify-content: space-between;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 3.8rem;
-    background-color: #000;
+    max-width: 44.6rem;
     width: 100vw;
     height: 100vh;
     background-color: #000;
     color: #fff;
     transform: translateX(100%);
-    transition: 0.25s ease-in-out;
+}
+
+.navbar--mobile {
+    transition: transform 0.25s ease-in-out;
 }
 
 .navbar--active {
     transform: translateX(0);
+    transition: transform 0.25s ease-in-out;
 }
 
 .navbar__list {
@@ -119,7 +123,7 @@ body {
 }
 
 .navbar__list li {
-    font-size: 4.8rem;
+    font-size: 3rem;
     margin-bottom: 2.5rem;
 }
 
