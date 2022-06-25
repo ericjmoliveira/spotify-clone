@@ -1,7 +1,7 @@
 # Spotify Clone
 
-Mobile-first responsive Spotify's homepage clone using HTML, CSS and JavaScript, for studying purposes only.
+Mobile-first responsive Spotify homepage clone using HTML, CSS and JavaScript.
 
-Reference page: https://www.spotify.com/us/
+Reference: https://www.spotify.com/us/
 
 Link: https://ericjmoliveira.github.io/spotify-clone
