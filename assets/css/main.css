@@ -17,6 +17,21 @@
     font-weight: 400;
 }
 
+/* Animations */
+@keyframes animateLinks {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate {
+    animation: animateLinks 0.5s;
+}
+
 /* Global styles */
 
 * {
