@@ -128,7 +128,6 @@ body {
 }
 
 .navbar--disabled {
-    opacity: 0.25;
     transition: 0.25s 0.1s ease-in;
 }
 
