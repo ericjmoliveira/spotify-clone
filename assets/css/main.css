@@ -29,6 +29,16 @@
     }
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Global styles */
 
 * {
@@ -118,17 +128,9 @@ body {
     transform: translateX(100%);
 }
 
-.navbar--mobile {
-    transition: transform 0.25s ease-in-out;
-}
-
 .navbar--enabled {
     transform: translateX(0);
     transition: transform 0.25s ease-in-out;
-}
-
-.navbar--disabled {
-    transition: 0.25s 0.1s ease-in;
 }
 
 .navbar__list {
