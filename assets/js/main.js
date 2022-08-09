@@ -19,11 +19,9 @@ menuButton.addEventListener('click', () => {
             link.style.animation = `animateLinks .5s ${0.025 * index}s`;
         } else {
             link.style.animation = '';
-            navbar.style.transition = 'transform 0.25s 0.1s ease-in';
-            navbar.style.animation = 'fadeOut .5s';
+            navbar.style.transition = 'transform 0.25s 0.25s ease-in';
             setTimeout(() => {
                 navbar.style.transition = '';
-                navbar.style.animation = '';
             }, 1000);
         }
     });
